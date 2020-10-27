@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- font link -->
+  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+  <!-- css link -->
+  <link rel="stylesheet" href="style.css">
+  <title> Budget Tracker</title>
+</head>
+<body>
+    <div class='container'>
+        
+        <div class='header'>
+            <h1>Budget Tracker</h1>
+        </div>
+     
+    <div class="main">
+        
+        <div class="dashboard">
+            <!-- 1st dashBoard -->
+            <div class='hDashBoard'>
+                <div class="TDashBoard">
+                    <div class='budgetDesc'>
+                        
+                        <input type="text" id='amount' placeholder="AMOUNT" required>
+                        <input type="text" id='desc' placeholder="DESCRIPTION" required>
+                        
+                        <div class="budgetOptions">
+                            <select name="" id="option" required>
+                                <option disabled selected>---Choose option---</option>
+                                <option value="income">Income</option>
+                                <option value="expense">Expense</option>
+                            </select>
+                        </div>
+         
+                       <button class='submit'>Submit</button>
+                    </div>
+                </div>
+            <div class="TBetween"></div>
+        </div>
+
+        <!-- second dashboard -->
+        <div class='jDashBoard'>
+           
+            <div class="jTopDashBoard">
+                
+                <div class="iDashBoard iIncome">
+                    <h5>Income</h5>
+                    <p class='incTotal'>Rs 0.00</p>
+                    <span class='incSum'>No Income Yet</span>
+                </div>
+           
+            <div class='jBetween'></div>
+               
+                <div class="iDashBoard iExpense">
+                    <h5>Expenses</h5>
+                    <p class='expTotal'>Rs 0.00</p>
+                    <span class='expSum'>No Expense Yet</span>
+                </div>
+            
+            <div class='jBetween'></div>
+            
+            <div class="iDashBoard iBalance">
+                <h5>Remaining amount</h5>
+                <p class='balSum'>Rs 0.00</p>
+                <span class='balPercent'>No Savings Yet</span>
+            </div>
+        
+        </div>
+
+        <!-- bottom bar starts here -->
+        <div class="jBottomDashBoard">
+            <div class="bar"> &nbsp;
+            <!-- balance info-tags here-->         
+            </div>
+        </div>
+    </div>
+    <!-- second dashboard eand -->
+    </div>
+    <!-- dashboard ends -->
+    <!-- summary ends here -->
+    <div class='summary'>
+        <div class='income'>
+            <h5>Income Summary</h5>
+            <ul class='incomeSummary'>
+          <!-- income list goes here -->
+            </ul>
+        </div>
+        
+        <div class='inBetween'></div>
+            <div class='expense'>
+            <h5>Expense Summary</h5>
+            <ul class='expenseSummary'>
+             <!-- expense list goes here--> 
+            </ul>
+        </div>
+   
+    </div>
+</div>
+<!-- <div class="vertical-bar">
+    
+</div> -->
+<!-- <div class="outer-wrapper">
+    <div class="column-wrapper">
+      <div class="column"></div>
+    </div>
+    <div class="percentage">--</div>
+    <div class="value">XX / YY</div>
+  </div>
+</div> -->
+
+</body>
+<!--Javascript link-->
+<script src='variables.js'></script>
+<script src='script.js'></script>
+</html> 
